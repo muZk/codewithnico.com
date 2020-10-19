@@ -8,23 +8,25 @@ tags: React
 excerpt: When you start, there are various function styles thrown around… Which one should you use?
 ---
 
-In React world, programmers thrown around various function styles. For example:
+In React world, developers thrown around various function styles. For example:
 
-    const Text1 = (props) => (
-      <div>{props.message}</div>
-    );
-    
-    const Text2 = ({ message }) => (
-      <div>{message}</div>
-    );
-    
-    function Text3(props) {
-      return <div>{props.message}</div>
-    }
-    
-    function Text4({ message }) {
-      return <div>{message}</div>
-    }
+```jsx
+const Text1 = (props) => (
+  <div>{props.message}</div>
+);
+
+const Text2 = ({ message }) => (
+  <div>{message}</div>
+);
+
+function Text3(props) {
+  return <div>{props.message}</div>
+}
+
+function Text4({ message }) {
+  return <div>{message}</div>
+}
+```
 
 Took from [reddit](https://www.reddit.com/r/reactjs/comments/fvd0h9/what_style_of_functions_do_you_prefer_to_use_in/) 
 Which one is better? Which one should you use?
@@ -36,7 +38,7 @@ As stated in this [discussion on Twitter](https://twitter.com/dan_abramov/status
 > It so doesn’t matter
 > &mdash; Dan Abramov (@dan_abramov) [May 16, 2018](https://twitter.com/dan_abramov/status/996710899921686528?ref_src=twsrc%5Etfw)
 
-What is important is to **stick with one **when building an application.This way:
+What is important is to **stick with one** when building an application. This way:
 
 - Your code will be easier to read because it use the same convention everywhere
 - You will focus on building the app instead of thinking about how to write your components.
@@ -46,22 +48,25 @@ What is important is to **stick with one **when building an application.This way
 
 I use named functions with [destructed props](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to define my components:
 
-    function Text4({ message }) {
-      return <div>{message}</div>
-    }
+```jsx
+function Text4({ message }) {
+  return <div>{message}</div>
+}
+```
 
 My personal preference: named function with destructured props
+
 Why this style? Let's compare with alternatives:
 
 ### function vs const
 
-When using a const, I read it as “*I'm defining an anonymous function and storing it in a variable*”*. *While with a function it's like “*here is a function*”*.*
+When using a const, I read it as “*I'm defining an anonymous function and storing it in a variable*”. While with a function it's like “*here is a function*”.
 
 It is longer to type but it is easier to read.
 
 ### Destructed props
 
-What I like about destructed props is that I know what are the accepted props *as I read the component. *I know this is not a strong argument, since there are other ways to do it. But this is the easier 😇
+What I like about destructed props is that I know what are the accepted props *as I read the component.* I know this is not a strong argument, since there are other ways to do it. But this is the easier 😇
 
 ### How to be consistent without thinking about it
 
