@@ -1,0 +1,25 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.post-content {
+  $image-margin: 2.5em;
+
+  img {
+    max-width: 100%;
+    margin: 0 auto $image-margin;
+    display: block;
+  }
+
+  .highlighter-rouge {
+    margin-bottom: $image-margin;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: -$image-margin;
+    margin-bottom: 15px; // "p"'s margin bottom
+  }
+}
