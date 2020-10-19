@@ -17,8 +17,8 @@ If you don't mind breaking name conventions, go ahead and use snake case in your
 
 For the rest of us, I have a solution:
 
-- *after* retrieving data from your backend, transform it to camelCase
-- *before* sending data to your backend, transform it to snake_case
+1. *after* retrieving data from your backend, transform it to camelCase
+2. *before* sending data to your backend, transform it to snake_case
 
 Why in client code you might ask? Well, because 99% of the time you will be adding somekind of *fetch* wrapper in your app (for example, to transform the responses to JSON). Just extend it a little.
 
@@ -30,37 +30,48 @@ The transformation is easy because there are packages for it. I'll be using [hum
 
 Basically:
 
-    // api.js
-    
-    import humps from 'humps';
-    
-    export async function get(url) {
-        return fetch(url)
-            .then(response => response.json())
-            .then(json => humps.camelizeKeys(json))
-    }
-    
+```js
+// api.js
 
-get wrapper
+import humps from 'humps';
+
+export async function get(url) {
+  return fetch(url)
+    .then(response => response.json())
+    .then(json => humps.camelizeKeys(json))
+}
+```
+
+<figcaption>GET wrapper</figcaption>
+
 > before sending data to your backend, transform it to snakeCase
 
-    // api.js
-    
-    import humps from 'humps';
-    
-    export async function post(url, data) {
-        const body = JSON.stringify(humps.decamelizeKeys(data));
-        return fetch(url, { method: 'POST', body })
-            .then(response => response.json())
-            .then(json => humps.camelizeKeys(json))
-    }
+```js
+// api.js
 
-post wrapper
+import humps from 'humps';
+
+export async function post(url, data) {
+  const body = JSON.stringify(humps.decamelizeKeys(data));
+  return fetch(url, { method: 'POST', body })
+    .then(response => response.json())
+    .then(json => humps.camelizeKeys(json))
+}
+```
+
+<figcaption>POST wrapper</figcaption>
+
 Then in your React components use your new functions and you're done!
 
 ### Example
-![](/content/images/2020/09/Screen-Shot-2020-09-07-at-15.39.27.png)[Demo](https://codesandbox.io/s/distracted-wilbur-zr914?file=/src/App.js)
-There is the code of [example App](https://codesandbox.io/s/distracted-wilbur-zr914?file=/src/App.js) using [PokeApi](https://pokeapi.co/docs/v2):
+
+In this example, I'll show how to use the wrappers to display a list of pokemons using [PokeApi](https://pokeapi.co/docs/v2):
+
+![Demo](/assets/images/2020-07-28-how-to-deal-with-cases-mismatch-between-django-and-react/demo.png)
+
+<figcaption>Source code can be found <a href="https://codesandbox.io/s/distracted-wilbur-zr914?file=/src/App.js" target="_blank">here</a>.</figcaption>
+
+Code:
 
 {% raw %}
 ```jsx
@@ -113,8 +124,9 @@ export default function App() {
 ```
 {% endraw %}
 
-Example App using our API wrapper
+<figcaption>Example App using our API wrapper</figcaption>
+
 ## Why it works
 
-- Most React apps needs some-kind of wrapper for requests. It could be to transform all requests to JSON, to add authentication tokens, etc. So extending the wrapper a little for transformations is okay and straightforward.
-- Sometimes you won't be able to touch your backend code. In this case, any transformation should be done in client (React) anyway.
+1. Most React apps needs some-kind of wrapper for requests. It could be to transform all requests to JSON, to add authentication tokens, etc. So extending the wrapper a little for transformations is okay and straightforward.
+2. Sometimes you won't be able to touch your backend code. In this case, any transformation should be done in client (React) anyway.
