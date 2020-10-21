@@ -354,7 +354,3 @@ useEffect(() => {
 ```
 
 <figcaption><code>useEffect</code> that imitates <code>componentDidMount</code> and <code>componentWillUnmount</code></figcaption>
-
----
-
-Too much to remember? Don't worry, I made a *"Class components to Hooks"* Cheatsheet you can use 🎁 💝 Get it below👇
