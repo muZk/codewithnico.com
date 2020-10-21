@@ -5,6 +5,7 @@ slug: production-ready-react-apps
 date_published: 2020-05-10T23:15:10.000Z
 date_updated: 2020-09-04T20:08:06.000Z
 tags: React
+image: /assets/images/2020-05-10-production-ready-react-apps/cover.png
 excerpt: A list of modern ReactJS apps you can study!
 ---
 

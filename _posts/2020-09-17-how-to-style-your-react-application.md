@@ -5,6 +5,8 @@ slug: how-to-style-your-react-application
 date_published: 2020-09-17T20:46:46.000Z
 date_updated: 2020-09-17T20:50:29.000Z
 tags: React
+image: /assets/images/2020-09-17-how-to-style-your-react-application/cover.png
+excerpt: We as developers focus on how things work, not on how they look. Until we realize that our little baby is ugly 😭 so then we start styling and resizing here and there to make it prettier. But how the heck can we style all of them in a way that is efficient and makes sense?
 ---
 
 > I built my first app. It works. Now how the heck do I go about styling it?

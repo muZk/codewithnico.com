@@ -5,6 +5,7 @@ slug: what-style-of-functions-do-you-prefer-to-use-in-react-and-why
 date_published: 2020-04-19T20:07:13.000Z
 date_updated: 2020-09-02T22:44:24.000Z
 tags: React
+image: /assets/images/2020-04-19-what-style-of-functions-do-you-prefer-to-use-in-react-and-why/cover.png
 excerpt: When you start, there are various function styles thrown around… Which one should you use?
 ---
 
