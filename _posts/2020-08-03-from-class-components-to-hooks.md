@@ -7,6 +7,7 @@ date_updated: 2020-09-02T22:49:57.000Z
 tags: React
 image: /assets/images/2020-08-03-from-class-components-to-hooks/cover.png
 excerpt: Refactoring a small class component to hooks
+hide_cta: true
 ---
 
 You are comfortable with class components and you are wondering if you should learn React hooks (short answer: *yes, you should*).
@@ -355,3 +356,11 @@ useEffect(() => {
 ```
 
 <figcaption><code>useEffect</code> that imitates <code>componentDidMount</code> and <code>componentWillUnmount</code></figcaption>
+
+---
+
+Too much to remember? Don't worry, I made a _Class components to Hooks_ Cheatsheet you can use 🎁 💝
+
+Get it below 👇
+
+<script async data-uid="5a5d4749ec" src="https://codewithnico.ck.page/5a5d4749ec/index.js"></script>
