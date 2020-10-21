@@ -28,3 +28,65 @@
     margin-top: 0;
   }
 }
+
+.site-header {
+  background-color: black;
+
+  .site-title {
+    color: white;
+  }
+
+  .page-link {
+    color: white;
+  }
+}
+
+.post, .post-list {
+  margin-bottom: 3rem;
+
+  a {
+    padding: 1px 0 0 0;
+    box-shadow: inset 0 -2px 0 #0074e4;
+    text-decoration: none;
+    background: 0 0;
+    transition: box-shadow .2s;
+  
+    &:hover {
+      box-shadow: inset 0 -1.1em 0 rgba(0, 116, 228, .2);
+      text-decoration: none;
+    }
+  }
+}
+
+.home .post-list, .post {
+  li {
+    position: relative;
+    list-style: none;
+    margin-bottom: calc(1.75rem / 2);
+
+    &::before {
+      display: inline-block;
+      content: ' ';
+      background: #0074e4;
+      width: 14px;
+      height: 5px;
+      position: absolute;
+      top: 10px;
+      left: -26px;
+      transform: rotate(-5deg);
+    }
+
+    &:nth-of-type(2n+1)::before {
+      transform: rotate(4deg);
+    }
+  }
+
+  .post-link {
+    font-size: 1em;
+    display: inline;
+  }
+
+  .post-meta {
+    display: none;
+  }
+}

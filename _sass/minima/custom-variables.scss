@@ -1,3 +1,8 @@
 $base-font-size: 18px;
 $base-line-height: 1.618;
 $content-width: 70 * ($base-font-size / $base-line-height);
+
+$text-color: #111111 !default;
+$link-base-color: $text-color;
+$link-hover-color: $text-color;
+$link-visited-color: darken($link-base-color, 15%);
