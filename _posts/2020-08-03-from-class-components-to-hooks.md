@@ -35,6 +35,7 @@ This app will show how long have you been in the page. To build this, we will:
 
 Here is the implementation of this app:
 
+{% raw %}
 ```jsx
 import React from "react";
 
@@ -66,7 +67,8 @@ export default class App extends React.Component {
     );
   }
 }
-``` 
+```
+{% endraw %}
 <figcaption>
   <a href="https://codesandbox.io/s/async-shadow-1toqw?file=/src/App.js" target="_blank">Demo</a>
 </figcaption>
@@ -85,6 +87,7 @@ In other words:
 
 In our case:
 
+{% raw %}
 ```jsx
 import React from "react";
 
@@ -98,6 +101,7 @@ export default function App() {
   );
 }
 ```
+{% endraw %}
 
 This is not working yet. We have to modify it a bit...
 
@@ -160,6 +164,7 @@ const [counter, setCounter] = useState(0); // 0 is the initial value
 
 Now our `App` code should look like this:
 
+{% raw %}
 ```jsx
 import React, { useState } from "react";
     
@@ -173,6 +178,7 @@ export default function App() {
   );
 }
 ```
+{% endraw %}
 <figcaption>Functional component with state</figcaption>
 
 [This works!](https://codesandbox.io/s/weathered-sun-fdgeq) But we are not done yet because we are not counting every second.
@@ -183,6 +189,7 @@ In function components, to execute code after the component has been rendered yo
 
 The `useEffect` hook takes a function which will be invoked after render. Very similar to `componentDidMount`:
 
+{% raw %}
 ```jsx
 import React, { useState, useEffect } from "react";
 
@@ -201,6 +208,7 @@ export default function App() {
   );
 }
 ```
+{% endraw %}
 <figcaption>Adding <code>componentDidMount</code> logic</figcaption>
 
 After `render` (in our `useEffect`) we have to:
@@ -228,6 +236,7 @@ When `setCounter` is called, **it will trigger a new render**, similar to callin
 
 Now our App looks like this:
 
+{% raw %}
 ```jsx
 import React, { useState, useEffect } from "react";
 
@@ -248,6 +257,7 @@ export default function App() {
   );
 }
 ```
+{% endraw %}
 
 Which does almost everything!
 
@@ -287,6 +297,7 @@ useEffect(() => {
 
 And the final code:
 
+{% raw %}
 ```jsx
 import React, { useState, useEffect } from "react";
 
@@ -309,6 +320,7 @@ export default function App() {
   );
 }
 ```
+{% endraw %}
 <figcaption>
   See in <a href="https://codesandbox.io/s/weathered-sun-fdgeq" target="_blank">codesandbox</a>
 </figcaption>
