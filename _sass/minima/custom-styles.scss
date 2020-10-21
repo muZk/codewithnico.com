@@ -31,12 +31,9 @@
 
 .site-header {
   background-color: black;
+  border-top-color: #0074e4;
 
   .site-title {
-    color: white;
-  }
-
-  .page-link {
     color: white;
   }
 }
@@ -56,6 +53,16 @@
       text-decoration: none;
     }
   }
+}
+
+@media screen and (min-width: 600px) {
+  .site-nav .trigger .page-link {
+    color: white;
+  }
+}
+
+.post-list {
+  margin-left: 30px;
 }
 
 .home .post-list, .post {
