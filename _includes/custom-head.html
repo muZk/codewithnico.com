@@ -6,3 +6,9 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+
+{%- if jekyll.environment == 'production' -%}
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="VDIAJDED" defer></script>
+  <!-- / Fathom -->
+{%- endif -%}
