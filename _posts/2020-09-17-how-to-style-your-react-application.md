@@ -66,19 +66,19 @@ The tricky part is _choosing_ the colors. What colors should you use?
 
 Given that my design knowledge is zero, I usually use a palette color tool such as [colorhunt](https://colorhunt.co/) or [coolors](https://coolors.co/). Thanks to them, you can choose any one you like with visual inspection:
 
-![How to style your React application?](/assets/images/2020-09-17-how-to-style-your-react-application/colorhunt.png)
+![Colorhunt example](/assets/images/2020-09-17-how-to-style-your-react-application/colorhunt.png)
 <figcaption>Color Hunt example</figcaption>
 
 For example, for a [Chilean Tax payment calculator](https://impuestos.netlify.app/) I made, the colors I used were a variation of [this palette](https://colorhunt.co/palette/22672):
 
-![How to style your React application?](/assets/images/2020-09-17-how-to-style-your-react-application/demo.gif)
+![Color Hunt in action](/assets/images/2020-09-17-how-to-style-your-react-application/demo.gif)
 <figcaption>Color hunt in action: using palettes, you can choose one that looks good for your project.</figcaption>
 
 Sometimes you're told about the dominant color. Maybe your boss told you so or maybe you feel that you should use a particular color.
 
 In either case, you already know the main color, so you can use [Adobe Color Wheel](https://color.adobe.com/create/color-wheel) to get complementary colors that looks nice with your choice:
 
-![How to style your React application?](/assets/images/2020-09-17-how-to-style-your-react-application/triad.png)
+![Complementary colors with Adobe Color Wheel](/assets/images/2020-09-17-how-to-style-your-react-application/triad.png)
 <figcaption>Looking for complementary colors with Adobe Color Wheel</figcaption>
 
 ## Personalization is not all about colors
