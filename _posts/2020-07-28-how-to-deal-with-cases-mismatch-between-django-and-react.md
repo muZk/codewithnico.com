@@ -5,7 +5,8 @@ slug: how-to-deal-with-cases-mismatch-between-django-and-react
 date_published: 2020-07-28T16:43:51.000Z
 date_updated: 2020-09-07T18:40:42.000Z
 tags: React
-image: /assets/images/2020-07-28-how-to-deal-with-cases-mismatch-between-django-and-react/cover.png
+image:
+  path: /assets/images/2020-07-28-how-to-deal-with-cases-mismatch-between-django-and-react/cover.png
 excerpt: Rails and Django uses snake_case while JavaScript (React) uses camelCase. In this post, we use a simple solution to deal with it.
 ---
 

@@ -5,7 +5,8 @@ slug: what-is-useref-for-when-should-i-use-it
 date_published: 2020-09-09T20:24:22.000Z
 date_updated: 2020-09-09T20:25:10.000Z
 tags: React
-image: /assets/images/2020-09-09-what-is-useref-for-when-should-i-use-it/cover.png
+image:
+  path: /assets/images/2020-09-09-what-is-useref-for-when-should-i-use-it/cover.png
 excerpt: If you have tried reading the docs over and over again but you still don't understand useRef, this post is for you!
 ---
 

@@ -5,7 +5,8 @@ slug: from-class-components-to-hooks
 date_published: 2020-08-03T23:53:24.000Z
 date_updated: 2020-09-02T22:49:57.000Z
 tags: React
-image: /assets/images/2020-08-03-from-class-components-to-hooks/cover.png
+image:
+  path: /assets/images/2020-08-03-from-class-components-to-hooks/cover.png
 excerpt: Refactoring a small class component to hooks
 hide_cta: true
 ---

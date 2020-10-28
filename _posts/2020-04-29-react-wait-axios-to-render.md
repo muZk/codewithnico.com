@@ -5,7 +5,8 @@ slug: react-wait-axios-to-render
 date_published: 2020-04-29T14:50:14.000Z
 date_updated: 2020-09-02T22:45:33.000Z
 tags: React
-image: /assets/images/2020-04-29-react-wait-axios-to-render/cover.png
+image:
+  path: /assets/images/2020-04-29-react-wait-axios-to-render/cover.png
 excerpt: You may know how to fetch data with Axios, but how do you render it to React?
 ---
 
