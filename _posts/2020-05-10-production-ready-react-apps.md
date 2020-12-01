@@ -134,6 +134,58 @@ This is an example of a [Gatsby](https://www.gatsbyjs.com/) project that uses ho
 
 If you haven't created your GitHub profile, maybe you can now by using this tool ([I did!](https://github.com/muzk/))
 
+## 10) Moose - [Live](https://getmoose.in/) | [Repo](https://github.com/ritz078/moose) 
+
+Moose is an application to stream, cast and download torrents built with [Nextron](https://github.com/saltyshiomix/nextron).
+
+![Moose Screenshot](/assets/images/2020-05-10-production-ready-react-apps/moose-demo.png)
+
+What is Nextron? It's "Next.js" (for Server Side Rendering) + "Electron" (to built desktop app using web technologies).
+
+I don't have experience building this kind of apps. But as far I can see, the file structure is by _file type_:
+
+![Moose file structure](/assets/images/2020-05-10-production-ready-react-apps/moose-files.png)
+
+The project uses [TypeScript](https://www.typescriptlang.org/) and for custom styles [css-modules](https://github.com/css-modules/css-modules)
+
+![Moose file structure](/assets/images/2020-05-10-production-ready-react-apps/moose-component-folder.png)
+
+## 11) Courselit - [Live] | [Repo](https://github.com/codelitdev/courselit)
+
+Courselit is an app that helps you to start your own online teaching business. 
+
+How? Well, it is a CMS (content management system) for starting creating your own courses which uses Stripe to receive payments. It is an alternative to paid solutions (like Teachable).
+
+![Courselit preview](../assets/images/2020-05-10-production-ready-react-apps/courselit-preview.png)
+
+Frontend is built with [Preact](https://preactjs.com/) (instead of React) with [Next](https://nextjs.org/):
+
+![Courselit](/assets/images/2020-05-10-production-ready-react-apps/courselit-files.png)
+
+Backend is [Express](https://expressjs.com/) with [MongoDB](https://www.mongodb.com/).
+
+Something interesting is that this is a [MonoRepo](https://en.wikipedia.org/wiki/Monorepo), which means in the same github repo lives frontend and backend as separated packages (see `packages`). To manage multiple javascript packages in the same repository, it uses [Lerna](https://github.com/lerna/lerna).
+
+## 12) Fireact - [Repo](https://github.com/chaoming/fireact) - [Live](https://fireact-e1bdc.firebaseapp.com/) 
+
+Fireact is an app to build your own [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) where you can receive payments through [Stripe](https://stripe.com/es-us).
+
+It is a full-stack app built with [Firebase](https://firebase.google.com/) and React ([CRA](https://github.com/facebook/create-react-app)).
+
+File structure is a mix betweeen "file types":
+
+![Fireact code structure](/assets/images/2020-05-10-production-ready-react-apps/fireact-files.png)
+
+And "by page". Pages are split between "auth pages" and "without auth":
+
+![Fireact page separation](/assets/images/2020-05-10-production-ready-react-apps/fireact-pages.png)
+
+It uses [Firestore](https://firebase.google.com/docs/firestore) as you can see in `UserList` ([here](https://github.com/chaoming/fireact/blob/master/src/pages/auth/accounts/UserList/index.js#L39)).
+
+And for the UI, it uses [coreui](https://coreui.io) which is an Admin template for Bootstrap:
+
+![Fireact Screenshot](../assets/images/2020-05-10-production-ready-react-apps/fireact-screenshot.png)
+
 ## Did I miss a project?
 
 It was a bit hard to find open-source projects using the latest react tools (e.g. hooks) 😓. 
