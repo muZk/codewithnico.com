@@ -1,0 +1,7 @@
+{% if page.hreflang_es %}
+  <link rel="alternate" hreflang="es" href="{{ page.hreflang_es }}" />
+{%- endif -%}
+
+{% if page.url %}
+  <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+{% endif %}

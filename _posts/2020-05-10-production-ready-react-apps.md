@@ -8,6 +8,7 @@ tags: React
 image:
   path: /assets/images/2020-05-10-production-ready-react-apps/cover.png
 excerpt: A list of modern ReactJS apps you can study!
+hreflang_es: https://gomezespejo.com/apps-react-para-aprender/
 ---
 
 As you grow your knowledge in React.js, you will notice that there are many sources with simple code examples but only a few of advanced stuff. And many of them have "outdated code" (no hooks, class components everywhere, etc).
