@@ -10,7 +10,7 @@ image:
 excerpt: You may know how to fetch data with Axios, but how do you render it to React?
 ---
 
-> Getting data with Axios is easy, but rendering it ~OMFG~
+> Getting data with Axios is easy, but rendering it ~OUCH~
 
 You may know how to fetch data with Axios, but how do you render it in React?
 
